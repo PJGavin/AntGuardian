@@ -63,12 +63,11 @@ Using the command prompt, while in the directory Downloads/AntGuardian, run the 
 
 (Mac & Linux) RUN COMMAND: 
 ```sh 
-python3 AntGuardian.py
+python2 AntGuardian.py
 ```
 (Windows) RUN COMMAND:
 ```sh
 py AntGuardian.py
-
 ```
 ## Options
 You may also change the time intervals (seconds): <br />
@@ -79,8 +78,16 @@ Time to wait between each check for accepted shares. <br />
 Lead time given to miners to start mining once they are rebooted by AntGuardian. <br />
 * SECONDS_TO_INTERNET: 
 Lead time given to miners to start mining again when internet connection is lost and recovered.
+*To close the terminal without having AntGuardian stop, you can use the program "screen":
+```sh
+screen python2 AntGuardian.py
+```
+Then press Ctrl+A, Ctrl+D to detach screen and you can close the terminal.
 
-
+To return to Antguardian:
+```sh
+screen -r
+```
 ## Sample pictures (v0.0.1)
 
 ![alt text](https://raw.githubusercontent.com/rsolano60/Examples/master/init.jpeg)
